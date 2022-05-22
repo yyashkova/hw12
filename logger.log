@@ -1,0 +1,294 @@
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [18/May/2022 20:33:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2022 20:33:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2022 20:33:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 06:11:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 06:11:37] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 06:11:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:Выполняется поиск
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/main/views.py", line 20, in search_page
+    posts = utils.load_json_data("../posts.json")
+NameError: name 'utils' is not defined
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 06:11:51] "[35m[1mGET /search?s=ага HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Выполняется поиск
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/main/views.py", line 20, in search_page
+    posts = load_json_data("posts.json")
+NameError: name 'load_json_data' is not defined
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 06:13:24] "[35m[1mGET /search?s=ага HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 06:15:29] "GET /search?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 06:15:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 06:16:14] "GET /search?s=утром HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 06:16:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 06:18:02] "GET /search?s=утром HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 06:18:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 06:18:14] "GET /search?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 06:18:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 06:21:03] "GET /search?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 06:21:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 06:46:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 06:46:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 06:46:39] "[33mGET /post HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:app:Exception on /post [GET]
+Traceback (most recent call last):
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/loader/views.py", line 11, in create_new_post_page
+    return render_template("")
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 06:49:03] "[35m[1mGET /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:app:Exception on /post [GET]
+Traceback (most recent call last):
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/loader/views.py", line 11, in create_new_post_page
+    return render_template("")
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 06:50:17] "[35m[1mGET /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:app:Exception on /post [GET]
+Traceback (most recent call last):
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/loader/views.py", line 11, in create_new_post_page
+    return render_template("")
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 06:51:07] "[35m[1mGET /post HTTP/1.1[0m" 500 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 06:51:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 06:51:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /post [GET]
+Traceback (most recent call last):
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/loader/views.py", line 11, in create_new_post_page
+    return render_template("")
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 06:51:11] "[35m[1mGET /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:app:Exception on /post [GET]
+Traceback (most recent call last):
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/loader/views.py", line 11, in create_new_post_page
+    return render_template("")
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 06:51:40] "[35m[1mGET /post HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /post [GET]
+Traceback (most recent call last):
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/loader/views.py", line 11, in create_new_post_page
+    return render_template("")
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Users/yyashkova/PycharmProjects/pythonProject3/sky-pro/hw_12/venv/lib/python3.10/site-packages/flask/templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 06:51:42] "[35m[1mGET /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 06:53:33] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 06:53:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:03:52] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:03:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Данных тут нет
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:04:01] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:19:55] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:20:02] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:37:27] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:37:36] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:37:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:37:36] "[33mGET /%7B'pic':%20'uploads/images/George-Clooney-03%20copy.jpg',%20'content':%20'new%20post!'%7D HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:37:42] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:38:01] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:38:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:38:11] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:38:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:38:11] "[33mGET /%7B'pic':%20'uploads/images/George-Clooney-03%20copy.jpg',%20'content':%20'new_post!'%7D HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:38:26] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:38:53] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:38:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:38:53] "GET /uploads/images/George-Clooney-03%20copy.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:39:37] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:39:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:39:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:39:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:39:44] "GET /search?s=post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:39:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:39:44] "[36mGET /uploads/images/George-Clooney-03%20copy.jpg HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:42:29] "GET /search?s=post HTTP/1.1" 200 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:43:16] "GET /search?s=post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:43:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:43:16] "[36mGET /uploads/images/George-Clooney-03%20copy.jpg HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:43:27] "GET /search?s=post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:43:27] "[36mGET /uploads/images/George-Clooney-03%20copy.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 07:43:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 08:15:53] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 08:15:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 08:16:04] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 08:16:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 08:16:04] "GET /uploads/images/HTML5.rtfd.zip HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 08:30:22] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 08:30:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/May/2022 08:30:31] "POST /post HTTP/1.1" 200 -
